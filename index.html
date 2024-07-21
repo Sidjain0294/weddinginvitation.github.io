@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="text-section" id="text-section">
+                <p class="text" contenteditable="true" style="position: absolute; left: 10px; top: 10px;"></p>
+            </div>
+            <div class="control-panel">
+                <label for="font-size">Font Size:</label>
+                <input type="number" id="font-size" value="16">
+                
+                <label for="color">Color:</label>
+                <input type="color" id="color" value="#000000">
+
+                <label for="new-text">New Text:</label>
+                <input type="text" id="new-text">
+
+                <button onclick="changeStyle()">APPLY STYLE</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
